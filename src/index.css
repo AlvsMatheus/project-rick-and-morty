@@ -16,3 +16,7 @@
     color: #00afc6;
     -webkit-text-stroke: 1px #a7ce50;
 }
+
+html {
+  scroll-behavior: smooth;
+}

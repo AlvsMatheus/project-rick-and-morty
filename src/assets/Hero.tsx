@@ -2,7 +2,9 @@ import { useCharacters } from "./components/useCharacters"
 
 const Hero = () => {
 
-  const { characters, loading, error } = useCharacters(5);
+  
+
+  const { characters, loading, error } = useCharacters(10);
   if (loading) return <p>Carregando...</p>
   if (error) return <p>{error}</p>
 
@@ -12,6 +14,7 @@ const Hero = () => {
         characters.map((person) => (
           <article 
           key={person.id}
+          id={`character-${person.id}`}
           className="flex flex-col justify-evenly items-center relative px-10 h-[160dvh] md:h-[300dvh] lg:h-[160dvh] w-[100%] bg-black">
             <section className="flex flex-col h-[50%] justify-center items-center gap-20">
               <h1 className="font-rick text-rick-border text-7xl">{person.name}</h1>
