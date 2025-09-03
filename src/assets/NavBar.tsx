@@ -38,12 +38,12 @@ const NavBar = () => {
                 search && search.length > 0 && (
                 <div className="group absolute flex flex-col top-11 left-0 w-full">
                     {filteredCharacters.map((item) => (
-                            <div className="bg-green-400 hover:bg-green-500 p-2 text-md font-light">
+                            <div className="flex bg-green-400 hover:bg-green-500 p-2 text-md font-light">
                                 <a
                                 onClick = {() => setSearch('')}
                                 href={`#character-${item.id}`}
                                 key={item.id}
-                                className="text-black ">
+                                className="display-block w-full h-full text-black ">
                                     {item.name}
                                 </a>
                             </div>

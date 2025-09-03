@@ -1,5 +1,5 @@
-import Hero from "./assets/Hero"
-import Header from "./Header"
+import Hero from "./Hero/Hero"
+import Header from "./header/Header"
 import Footer from "./assets/Footer"
 
 function App() {

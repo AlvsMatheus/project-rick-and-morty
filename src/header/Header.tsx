@@ -1,4 +1,4 @@
-import NavBar from "./assets/NavBar"
+import NavBar from "../assets/NavBar"
 
 const Header = () => {
 

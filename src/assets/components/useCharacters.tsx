@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-interface Character {
+export interface Character {
     id: number;
     name: string;
     image: string;
